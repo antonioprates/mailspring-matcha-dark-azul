@@ -1,51 +1,51 @@
 @import 'base/ui-variables';
 
-@gray-base: #ffffff;
+@gray-base: #14161B;
 @gray-darker: darken(@gray-base, 13.5%);
 @gray-dark: darken(@gray-base, 20%);
 @gray: darken(@gray-base, 33.5%);
 @gray-light: darken(@gray-base, 46.7%);
 @gray-lighter: darken(@gray-base, 92.5%);
-@white: #0a0a0a;
+@white: @gray-dark;
 
-@accent-primary: #58b660;
+@accent-primary: #258FE1;
 @accent-primary-dark: darken(@accent-primary, 10%);
 
-@background-primary: #212121;
-@background-off-primary: #212121;
-@background-secondary: #121212;
-@background-tertiary: #6d7987;
+@background-primary: #1B1D24;
+@background-off-primary: @background-primary;
+@background-secondary: @gray-base;
+@background-tertiary: @gray-base;
 
 @border-color-primary: lighten(@background-primary, 10%);
 @border-color-secondary: lighten(@background-secondary, 10%);
 @border-color-tertiary: lighten(@background-tertiary, 10%);
 @border-color-divider: @border-color-secondary;
 
-@text-color: #eee;
+@text-color: #919599;
 @text-color-subtle: fadeout(@text-color, 20%);
 @text-color-very-subtle: fadeout(@text-color, 40%);
 @text-color-inverse: white;
 @text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
 @text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
-@text-color-heading: #fff;
+@text-color-heading: @text-color;
 
 @text-color-link: @accent-primary;
 @text-color-link-hover: @accent-primary-dark;
 @text-color-link-active: @accent-primary-dark;
 
 @btn-default-bg-color: lighten(@background-primary, 5%);
-@dropdown-default-bg-color: #404040;
+@dropdown-default-bg-color: #1B1D24;
 
-@input-bg: #2e2e2e;
+@input-bg: #21252B;
 @input-border: @border-color-divider;
 
-@list-bg: #333;
-@list-border: #383838;
+@list-bg: @background-primary;
+@list-border: #21252B;
 @list-selected-color: @text-color-inverse;
 @list-focused-color: @text-color;
 
-@toolbar-background-color: #121212;
-@panel-background-color: #121212;
+@toolbar-background-color: #14161B;
+@panel-background-color: #21252B;
 
 .sheet-toolbar {
   border-bottom: 1px solid @border-color-divider;

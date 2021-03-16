@@ -1,0 +1,92 @@
+@import 'base/ui-variables';
+
+@gray-base: #ffffff;
+@gray-darker: darken(@gray-base, 13.5%);
+@gray-dark: darken(@gray-base, 20%);
+@gray: darken(@gray-base, 33.5%);
+@gray-light: darken(@gray-base, 46.7%);
+@gray-lighter: darken(@gray-base, 92.5%);
+@white: #0a0a0a;
+
+@accent-primary: #58b660;
+@accent-primary-dark: darken(@accent-primary, 10%);
+
+@background-primary: #212121;
+@background-off-primary: #212121;
+@background-secondary: #121212;
+@background-tertiary: #6d7987;
+
+@border-color-primary: lighten(@background-primary, 10%);
+@border-color-secondary: lighten(@background-secondary, 10%);
+@border-color-tertiary: lighten(@background-tertiary, 10%);
+@border-color-divider: @border-color-secondary;
+
+@text-color: #eee;
+@text-color-subtle: fadeout(@text-color, 20%);
+@text-color-very-subtle: fadeout(@text-color, 40%);
+@text-color-inverse: white;
+@text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
+@text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
+@text-color-heading: #fff;
+
+@text-color-link: @accent-primary;
+@text-color-link-hover: @accent-primary-dark;
+@text-color-link-active: @accent-primary-dark;
+
+@btn-default-bg-color: lighten(@background-primary, 5%);
+@dropdown-default-bg-color: #404040;
+
+@input-bg: #2e2e2e;
+@input-border: @border-color-divider;
+
+@list-bg: #333;
+@list-border: #383838;
+@list-selected-color: @text-color-inverse;
+@list-focused-color: @text-color;
+
+@toolbar-background-color: #121212;
+@panel-background-color: #121212;
+
+.sheet-toolbar {
+  border-bottom: 1px solid @border-color-divider;
+  box-shadow: none;
+}
+
+.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+  filter: invert(100%);
+}
+img.content-dark {
+  filter: invert(100%);
+}
+img.content-light {
+  filter: invert(100%);
+}
+
+.mail-label {
+  filter: contrast(110%) brightness(85%);
+}
+
+#message-list .message-item-wrap .message-item-white-wrap {
+  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28), 0 1px 1.5px rgba(255, 255, 255, 0.08);
+}
+
+.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+  color: #aaa;
+}
+
+.thread-list .list-item.thread-list-reminder-item {
+  background-color: #312856;
+
+  &.unread {
+    background-color: #312856;
+    &:not(.focused):not(.selected) {
+      background-color: #312856;
+    }
+  }
+}
+
+.send-reminders-header {
+  color: #7d5bef;
+  background: #312856;
+  border-bottom: 1px solid #4d3b8a;
+}

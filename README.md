@@ -22,7 +22,7 @@ A fork on [Mailspring](https://www.getmailspring.com) email client's original `D
 
 If you are a git user, you can install the theme by cloning the repo:
 
-    $ git clone https://github.com/antonioprates/mailspring-matcha-dark-azul
+    git clone https://github.com/antonioprates/mailspring-matcha-dark-azul
 
 ### Install manually
 
